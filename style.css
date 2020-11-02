@@ -1,0 +1,386 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #969696;
+  background-color: #000;
+}
+
+.contact-info {
+  display: flex;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 15px;
+  margin: 0;
+  margin-left: 170px;
+}
+
+.contact-info > li {
+  padding: 14px 10px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.user-navigation > li {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 14px;
+  background-image: url(../images/log-in.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.secondary-header {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.logo {
+  padding: 16px 40px;
+  margin-left: 130px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu > li {
+  padding: 30px 20px;
+}
+
+.acquaintance {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-box {
+  border: 4px solid #fff;
+  padding: 95px 70px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.acquaintance > p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 154px;
+  max-width: 800px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.catalog-timing {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 72px;
+  font-family: "Playfair Display", serif, "PT Sans", sans-serif;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.catalog-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.catalog-item {
+  background-color: #191b1c;
+  margin-left: 30px;
+  padding: 55px 22px;
+  max-width: 200px;
+}
+
+.new-collection-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: start;
+  background-image: url(../images/man-in-chair.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.box-content {
+  padding: 200px 80px 60px 80px;
+  font-size: 36px;
+  line-height: 72px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.box-content > input {
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  padding: 10px;
+  margin-bottom: 60px;
+}
+
+.collection-history {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.article > h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 72px;
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+}
+
+.article > p {
+  max-width: 500px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.article > input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.catalog-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.catalog-products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+.catalog-products > p {
+  background-color: #191b1c;
+  margin: 30px;
+  padding: 55px 22px;
+  max-width: 200px;
+}
+
+.new-arrivals {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.partners-background {
+  background-color: #0f0f0f;
+}
+
+.partners-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+}
+
+.about-store {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-image: url(../images/pre-footer-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-store-article {
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+.about-store-article > h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about-store-article > p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  max-width: 400px;
+}
+
+
+.catalog-categories > h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.catalog-categories > a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0f0f0f;
+  padding: 10px 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 20px;
+}
+
+.mailing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+.mailing-form > h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mailing-form > p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.mail {
+  color: #fff;
+  background-color: rgba(251, 251, 251, 0.3);
+  border: none;
+  padding: 15px;
+  margin: 0;
+}
+
+.password {
+  color: #fff;
+  background-color: #0f0f0f;
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+}
