@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -19,7 +20,7 @@
         </div>
         <div class="navigation">
             <ul class="user-navigation">
-                <li>Войти/Регистрация</li>
+                <li><a href="#">Войти/Регистрация</a></li>
             </ul>
         </div>
     </header>
@@ -27,11 +28,11 @@
         <nav class="bottom-header">
             <img class="logo" src="images/logo.png" alt="Логотип">
             <ul class="main-menu">
-                <li>понравилось</li>
-                <li>личный кабинет</li>
-                <li>настройки</li> 
-                <li><img src="images/cart.svg" alt="cart"></li>
-                <li><img src="images/search.svg" alt="search"></li>
+                <li><a href="#">понравилось</a></li>
+                <li><a href="#">личный кабинет</a></li>
+                <li><a href="#">настройки</a></li> 
+                <li><a href="#"><img src="images/cart.svg" alt="cart"></a></li>
+                <li><a href="#"><img src="images/search.svg" alt="search"></a></li>
             </ul>
         </nav>
     </section>
@@ -40,6 +41,7 @@
         <section class="acquaintance">
             <div class="logo-box">
                 <img src="images/porten.png" alt="Логотип">
+                <img class="line" src="images/line-1.svg" alt="#">
                 <h2>Санкт-Петербург</h2>
             </div>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur assumenda iste totam fugiat quas ab officiis eaque quod, similique nihil dolor incidunt deleniti, ratione ex magnam dicta quae numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit similique doloribus cumque qui deserunt accusamus, fugit iure. Cumque molestias ea quia, assumenda ex commodi itaque nam fugit voluptatum magnam?</p>
@@ -48,6 +50,7 @@
         <section class="catalog">
             <div class="catalog-timing">
             <p>сезон 2020/21</p>
+            <img class="line-1" src="images/line.svg" alt="#">
             </div>
             <div class="catalog-items">
                 <p class="catalog-item">
@@ -73,6 +76,7 @@
             <section class="new-collection-box">
                 <div class="box-content">
                 <h2>Новая коллекция</h2>
+                <img class="line-2" src="images/line.svg" alt="#">
                 <input type="submit" value="подробнее" name="catalog">
                 </div>
             </section>
@@ -81,13 +85,14 @@
         <section class="collection-history">
             <img src="images/suit.jpg" width="600px" height="400px" alt="Костюм из коллекции">
             <div class="article">
-            <h2>коллекция 2018</h2>
+            <h2>коллекция 2019</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
             <input type="submit" name="collection" value="посмотреть коллекцию">
         </div>
         </section>
             <div class="new-arrivals">
                 <h2>новые поступления</h2>
+                <img src="images/line.svg" alt="#">
             </div>
         <section class="catalog-gallery">
             
@@ -133,6 +138,7 @@
         <div class="partners-background">
         <div class="partners-heading">
             <h3>наши партнеры</h3>
+            <img class="line" src="images/line.svg" alt="#">
         </div>
 
         <section class="partners">
@@ -145,18 +151,18 @@
     </div>
         <section class="about-store">
             <div class="about-store-article">
-            
                 <h3>о магазине</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.</p>
-            
-        </div>
+            </div>
             <div class="catalog-categories">
                 <h3>категории</h3>
+                <p class="clothing-accessories">
                 <a href="#">костюмы</a>
                 <a href="#">часы</a>
                 <a href="#">браслеты</a>
                 <a href="#">ремни</a>
                 <a href="#">запонки</a>
+            </p>
             </div>
             <div class="mailing-form">
                 <h3>рассылки</h3>
