@@ -28,8 +28,8 @@
         <nav class="bottom-header">
             <img class="logo" src="images/logo.png" alt="Логотип">
             <ul class="main-menu">
-                <li><a href="#">понравилось</a></li>
-                <li><a href="#">личный кабинет</a></li>
+                <li><a href="#">каталог</a></li>
+                <li><a class="login-link" href="#">личный кабинет</a></li>
                 <li><a href="#">настройки</a></li> 
                 <li><a href="#"><img src="images/cart.svg" alt="cart"></a></li>
                 <li><a href="#"><img src="images/search.svg" alt="search"></a></li>
@@ -177,5 +177,35 @@
     <footer>
         <h5>© 2020 Все права защищены</h5>
     </footer>
+
+<section class="modal modal-login modal-show">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите, пожалуйста, свои логин и пароль</p>
+    <form action="#" class="login-form" method="POST">
+        <p>
+        <label for="user-login"></label>
+        <input type="text" id="user-login" name="login" placeholder="Логин">
+    </p>
+    <p>
+        <label for="user-password"></label>
+        <input type="password" id="user-password" name="password" placeholder="Пароль">
+    </p>
+    <p class="login-help">
+        <label class="login-checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+        </label>
+        <a href="#" class="restore">Я забыл пароль</a>
+    </p>
+    <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
