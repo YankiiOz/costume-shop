@@ -36,7 +36,7 @@ img {
 
 .contact-info {
   display: flex;
-  background-image: url(./images/phone.svg);
+  background-image: url(../images/phone.svg);
   background-repeat: no-repeat;
   background-position: left;
   padding: 15px;
@@ -54,7 +54,7 @@ img {
   font-size: 12px;
   line-height: 16px;
   padding: 14px;
-  background-image: url(./images/log-in.svg);
+  background-image: url(../images/log-in.svg);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -92,23 +92,29 @@ img {
   align-items: center;
   margin: 0;
   padding: 0;
-  
 }
 
 .main-menu > li a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+}
+.login-link {
+  width: 100%;
+  height: 100%;
 }
 
 .main-menu > li {
-  padding: 30px 20px;
+  padding: 30px 0;
 }
 
-.main-menu > li:hover {
+.main-menu > li a:hover {
   background-color: #1f1f1f;
 }
 
-.main-menu > li:active {
+.main-menu > li a:active {
   background-color: #3f3f3f;
 }
 
@@ -118,7 +124,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,7 +140,6 @@ img {
   margin-top: 120px;
   margin-bottom: 80px;
 }
-
 
 .line {
   padding-top: 20px;
@@ -168,7 +173,7 @@ img {
   font-size: 36px;
   line-height: 72px;
   font-family: "Playfair Display", serif, "PT Sans", sans-serif;
-  margin-top: -50px;
+  margin-top: -20px;
 }
 
 .line-1 {
@@ -182,7 +187,7 @@ img {
   flex-direction: row;
   margin-right: 10px;
   margin-left: 20px;
-  margin-top: -60px;
+  margin-top: -51px;
 }
 
 .catalog-item {
@@ -196,12 +201,12 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: start;
-  background-image: url(./images/man-in-chair.jpg);
+  align-items: flex-start;
+  background-image: url(../images/man-in-chair.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  margin-bottom: 20px;
+  background-size: contain;
+  margin-bottom: 40px;
   max-width: 800px;
 }
 
@@ -209,11 +214,12 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 150px 100px 60px 100px;
+  padding: 250px 100px 10px 100px;
   font-size: 36px;
   line-height: 72px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
+  margin-top: -144px;
 }
 
 .line-2 {
@@ -453,8 +459,15 @@ img {
   background-color: rgb(97, 15, 15);
 }
 
-.password:active {
+.password:focus {
   background-color: rgb(151, 3, 3);
+  outline: none;
+}
+
+.mail:hover,
+.mail:focus {
+  background-color: #969696;
+  outline: none;
 }
 
 footer {
@@ -466,4 +479,228 @@ footer {
   font-size: 12px;
   line-height: 24px;
   color: #fff;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  background-color: #1f1f1f;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
+.modal-login {
+  width: 400px;
+  padding: 50px;
+  top: 175px;
+  left: 60%;
+  display: none;
+  
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: -23px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-close:focus {
+  outline: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 3px;
+  background-color: rgba(251, 251, 251, 0.5);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 37px;
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.login-form p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 15px;
+  padding-right: 40px;
+  font: inherit;
+  border-radius: 20px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.login-form input:focus,
+.login-form input:hover {
+  background-color: #3f3f3f;
+  outline: none;
+}
+
+.login-form .login-help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.login-checkbox {
+  color: #fff;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #969696;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #fff;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  width: 13px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.restore {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+
+.login-form .button {
+  width: 100%;
+  margin-right: 0;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.login-form .button:hover {
+  background-color: #3f3f3f;
+}
+
+.login-form .button:active {
+  outline: none;
+  background-color: #969696;
 }
