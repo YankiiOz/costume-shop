@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -46,7 +47,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(./images/phone.svg);
+  background-image: url(../images/phone.svg);
   background-repeat: no-repeat;
   background-position: left;
   padding: 15px;
@@ -64,7 +65,7 @@ img {
   font-size: 12px;
   line-height: 16px;
   padding: 14px;
-  background-image: url(./images/log-in.svg);
+  background-image: url(../images/log-in.svg);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -154,7 +155,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(./images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,7 +267,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url(./images/man-in-chair.jpg);
+  background-image: url(../images/man-in-chair.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -458,6 +459,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -647,7 +650,6 @@ footer {
   top: 175px;
   left: 60%;
   display: none;
-  
 }
 
 .modal-show {
@@ -918,4 +920,179 @@ footer {
 .login-form .button:active {
   outline: none;
   background-color: #969696;
+}
+
+@media (max-width: 768px) {
+  .main-header,
+  .content,
+  .information {
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 auto;
+    
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .modal-login {
+    position: fixed;
+    left: 22%;
+  }
+  .catalog-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    
+  }
+
+  .collection-history {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    
+  }
+}
+
+@media (max-width: 420px) {
+
+  .main-header,
+  .content,
+  .information {
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 auto;
+    
+  }
+  .contact-info {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .user-navigation {
+    padding: 0;
+  }
+  
+  .bottom-header img {
+    display: none;
+  }
+
+  .cart,
+  .search {
+    display: none;
+  }
+
+  .description {
+   width: 350px;
+  }
+
+  .catalog-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    
+  }
+
+  .catalog-item span {
+    font-size: 12px;
+    
+  }
+
+  .new-collection-box {
+    max-width: 375px;
+  }
+
+  .box-content {
+    max-width: 375px;
+  }
+
+  .box-content h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: -30px;
+  }
+
+  .collection-history {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    
+  }
+  .collection-history img {
+    max-width: 355px;
+  }
+
+  .collection-history h2 {
+    font-size: 25px;
+  }
+
+  .article p {
+    width: 300px;
+  }
+  .about-store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .mailing-form {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .catalog-categories {
+    margin-left: 10px;
+  }
+
+  .modal {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-header,
+  .content,
+  .information {
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 auto;
+    
+  }
+
+  .main-menu > li a {
+    padding-right: 0;
+  }
+
+  .description {
+    width: 290px;
+  }
+
+  .new-collection-box {
+    width: 300px;
+  }
+
+  .collection-history img {
+    width: 300px;
+  }
+ 
 }
