@@ -47,7 +47,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../images/phone.svg);
+  background-image: url(./images/phone.svg);
   background-repeat: no-repeat;
   background-position: left;
   padding: 15px;
@@ -65,7 +65,7 @@ img {
   font-size: 12px;
   line-height: 16px;
   padding: 14px;
-  background-image: url(../images/log-in.svg);
+  background-image: url(./images/log-in.svg);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -155,7 +155,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/background.jpg);
+  background-image: url(./images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,7 +267,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url(../images/man-in-chair.jpg);
+  background-image: url(./images/man-in-chair.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
